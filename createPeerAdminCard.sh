@@ -29,7 +29,7 @@ fi
 cat << EOF > org1onlyconnection.json
 {
     "name": "byfn-network-org1-only",
-    "type": "hlfv1",
+    "x-type": "hlfv1",
     "orderers": [
         {
             "url" : "grpc://localhost:7050",
@@ -65,7 +65,7 @@ EOF
 cat << EOF > org1connection.json
 {
     "name": "byfn-network-org1",
-    "type": "hlfv1",
+    "x-type": "hlfv1",
     "orderers": [
         {
             "url" : "grpc://localhost:7050",
@@ -138,7 +138,7 @@ rm -rf org1onlyconnection.json
 cat << EOF > org2onlyconnection.json
 {
     "name": "byfn-network-org2-only",
-    "type": "hlfv1",
+    "x-type": "hlfv1",
     "orderers": [
         {
             "url" : "grpc://localhost:7050",
@@ -175,7 +175,7 @@ EOF
 cat << EOF > org2connection.json
 {
     "name": "byfn-network-org2",
-    "type": "hlfv1",
+    "x-type": "hlfv1",
     "orderers": [
         {
             "url" : "grpc://localhost:7050",
@@ -254,7 +254,7 @@ rm -rf org2onlyconnection.json
 cat << EOF > org3onlyconnection.json
 {
     "name": "byfn-network-org3-only",
-    "type": "hlfv1",
+    "x-type": "hlfv1",
     "orderers": [
         {
             "url" : "grpc://localhost:7050",
@@ -291,7 +291,7 @@ EOF
 cat << EOF > org3connection.json
 {
     "name": "byfn-network-org3",
-    "type": "hlfv1",
+    "x-type": "hlfv1",
     "orderers": [
         {
             "url" : "grpc://localhost:7050",
