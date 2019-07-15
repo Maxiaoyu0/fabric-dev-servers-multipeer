@@ -74,26 +74,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer2.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
-              <caret line="83" column="10" lean-forward="true" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer3.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-59">
-              <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="1770">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer3.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1905">
-              <caret line="127" column="17" lean-forward="true" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+            <state relative-caret-position="220">
+              <caret line="139" column="38" selection-start-line="139" selection-start-column="38" selection-end-line="139" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -107,6 +107,7 @@
       <find>1</find>
       <find>2</find>
       <find>3</find>
+      <find>$ARCH-</find>
     </findStrings>
     <replaceStrings>
       <replace>peer3</replace>
@@ -121,14 +122,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/composer/configtx.yaml" />
-        <option value="$PROJECT_DIR$/composer/docker-compose-peer2.yml" />
-        <option value="$PROJECT_DIR$/composer/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/composer/docker-compose-peer3.yml" />
         <option value="$PROJECT_DIR$/startFabric-Peer3.sh" />
         <option value="$PROJECT_DIR$/createPeerAdminCard.sh" />
         <option value="$PROJECT_DIR$/endorsement-policy.json" />
         <option value="$PROJECT_DIR$/composer/howtobuild.sh" />
         <option value="$PROJECT_DIR$/composer/crypto-config.yaml" />
+        <option value="$PROJECT_DIR$/composer/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/composer/docker-compose-peer2.yml" />
+        <option value="$PROJECT_DIR$/composer/docker-compose-peer3.yml" />
       </list>
     </option>
   </component>
@@ -166,7 +167,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563193036274" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563193390271" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -199,15 +200,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563175754523</updated>
-      <workItem from="1563175756073" duration="7751000" />
+      <workItem from="1563175756073" duration="8044000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7751000" />
+    <option name="totallyTimeSpent" value="8044000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="825" extended-state="0" />
+    <frame x="-4" y="23" width="1440" height="825" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -215,12 +216,12 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3287858" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3287858" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -289,13 +290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer2.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="83" column="10" lean-forward="true" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer/crypto-config.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -303,17 +297,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer3.yml">
+    <entry file="file://$PROJECT_DIR$/composer/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        <state relative-caret-position="220">
+          <caret line="139" column="38" selection-start-line="139" selection-start-column="38" selection-end-line="139" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer2.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="127" column="17" lean-forward="true" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+        <state relative-caret-position="1770">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer3.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
         </state>
       </provider>
     </entry>

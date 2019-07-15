@@ -45,7 +45,7 @@ services:
 
   couchdb3:
     container_name: couchdb3
-    image: hyperledger/fabric-couchdb:1.2.1
+    image: hyperledger/fabric-couchdb:0.4.10
     ports:
       - 11984:5984
     environment:
@@ -80,7 +80,7 @@ services:
 
   couchdb4:
     container_name: couchdb4
-    image: hyperledger/fabric-couchdb:1.2.1
+    image: hyperledger/fabric-couchdb:0.4.10
     ports:
       - 12984:5984
     environment:
@@ -115,7 +115,7 @@ services:
 
   couchdb5:
     container_name: couchdb5
-    image: hyperledger/fabric-couchdb:1.2.1
+    image: hyperledger/fabric-couchdb:0.4.10
     ports:
       - 13984:5984
     environment:
