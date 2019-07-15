@@ -1,8 +1,8 @@
 cd "$(dirname "$0")"
 
-HOST1="192.168.1.222"
-HOST2="192.168.1.224"
-HOST3="192.168.1.224"
+HOST1="52.174.98.196"
+HOST2="13.93.0.148"
+HOST3="13.94.231.130"
 
 
 sed -i -e "s/{IP-HOST-1}/$HOST1/g" configtx.yaml
