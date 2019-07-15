@@ -11,6 +11,12 @@
                 "name": "member",
                 "mspId": "Org2MSP"
             }
+        },
+        {
+            "role": {
+                "name": "member",
+                "mspId": "Org3MSP"
+            }
         }
     ],
     "policy": {
