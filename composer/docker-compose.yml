@@ -2,7 +2,7 @@ version: '2'
 
 services:
   ca.org1.example.com:
-    image: hyperledger/fabric-ca:$ARCH-1.2.1
+    image: hyperledger/fabric-ca:1.2.1
     environment:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca.org1.example.com
@@ -18,7 +18,7 @@ services:
 
   orderer.example.com:
     container_name: orderer.example.com
-    image: hyperledger/fabric-orderer:$ARCH-1.2.1
+    image: hyperledger/fabric-orderer:1.2.1
     environment:
       - ORDERER_GENERAL_LOGLEVEL=debug
       - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
@@ -36,7 +36,7 @@ services:
 
   peer0.org1.example.com:
     container_name: peer0.org1.example.com
-    image: hyperledger/fabric-peer:$ARCH-1.2.1
+    image: hyperledger/fabric-peer:1.2.1
     environment:
       - CORE_LOGGING_PEER=debug
       - CORE_CHAINCODE_LOGGING_LEVEL=DEBUG
@@ -64,7 +64,7 @@ services:
 
   couchdb:
     container_name: couchdb
-    image: hyperledger/fabric-couchdb:$ARCH-1.2.1
+    image: hyperledger/fabric-couchdb:1.2.1
     ports:
       - 5984:5984
     environment:
@@ -73,7 +73,7 @@ services:
 
   peer1.org1.example.com:
     container_name: peer1.org1.example.com
-    image: hyperledger/fabric-peer:$ARCH-1.2.1
+    image: hyperledger/fabric-peer:1.2.1
     environment:
       - CORE_LOGGING_PEER=debug
       - CORE_CHAINCODE_LOGGING_LEVEL=DEBUG
@@ -101,7 +101,7 @@ services:
 
   couchdb1:
     container_name: couchdb1
-    image: hyperledger/fabric-couchdb:$ARCH-1.2.1
+    image: hyperledger/fabric-couchdb:1.2.1
     ports:
       - 6984:5984
     environment:
@@ -109,7 +109,7 @@ services:
 
   peer2.org1.example.com:
     container_name: peer2.org1.example.com
-    image: hyperledger/fabric-peer:$ARCH-1.2.1
+    image: hyperledger/fabric-peer:1.2.1
     environment:
       - CORE_LOGGING_PEER=debug
       - CORE_CHAINCODE_LOGGING_LEVEL=DEBUG
@@ -137,7 +137,7 @@ services:
 
   couchdb2:
     container_name: couchdb2
-    image: hyperledger/fabric-couchdb:$ARCH-1.2.1
+    image: hyperledger/fabric-couchdb:1.2.1
     ports:
       - 7984:5984
     environment:
