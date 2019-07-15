@@ -91,22 +91,22 @@ cat << EOF > org1connection.json
             "eventURL": "grpc://localhost:9053",
             "hostnameOverride": "peer2.org1.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-2}:10051",
+            "requestURL": "grpc://13.93.0.148:10051",
             "hostnameOverride": "peer0.org2.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-2}:11051",
+            "requestURL": "grpc://13.93.0.148:11051",
             "hostnameOverride": "peer1.org2.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-2}:12051",
+            "requestURL": "grpc://13.93.0.148:12051",
             "hostnameOverride": "peer2.org2.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-3}:13051",
+            "requestURL": "grpc://13.94.231.130:13051",
             "hostnameOverride": "peer0.org3.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-3}:14051",
+            "requestURL": "grpc://13.94.231.130:14051",
             "hostnameOverride": "peer1.org3.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-3}:15051",
+            "requestURL": "grpc://13.94.231.130:15051",
             "hostnameOverride": "peer2.org3.example.com"
         }
     ],
@@ -146,23 +146,23 @@ cat << EOF > org2onlyconnection.json
         }
     ],
     "ca": {
-        "url": "http://{IP-HOST-2}:7054",
+        "url": "http://13.93.0.148:7054",
         "name": "ca.org2.example.com",
         "hostnameOverride": "ca.org2.example.com"
     },
     "peers": [
         {
-            "requestURL": "grpc://{IP-HOST-2}:10051",
-            "eventURL": "grpc://{IP-HOST-2}:10053",
+            "requestURL": "grpc://13.93.0.148:10051",
+            "eventURL": "grpc://13.93.0.148:10053",
             "hostnameOverride": "peer0.org2.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-2}:11051",
-            "eventURL": "grpc://{IP-HOST-2}:11053",
+            "requestURL": "grpc://13.93.0.148:11051",
+            "eventURL": "grpc://13.93.0.148:11053",
             "hostnameOverride": "peer1.org2.example.com"
 
         }, {
-            "requestURL": "grpc://{IP-HOST-2}:12051",
-            "eventURL": "grpc://{IP-HOST-2}:12053",
+            "requestURL": "grpc://13.93.0.148:12051",
+            "eventURL": "grpc://13.93.0.148:12053",
             "hostnameOverride": "peer2.org2.example.com"
         }
     ],
@@ -183,7 +183,7 @@ cat << EOF > org2connection.json
         }
     ],
     "ca": {
-        "url": "http://{IP-HOST-2}:7054",
+        "url": "http://13.93.0.148:7054",
         "name": "ca.org2.example.com",
         "hostnameOverride": "ca.org2.example.com"
     },
@@ -198,28 +198,28 @@ cat << EOF > org2connection.json
             "requestURL": "grpc://localhost:9051",
             "hostnameOverride": "peer2.org1.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-2}:10051",
-            "eventURL": "grpc://{IP-HOST-2}:10053",
+            "requestURL": "grpc://13.93.0.148:10051",
+            "eventURL": "grpc://13.93.0.148:10053",
             "hostnameOverride": "peer0.org2.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-2}:11051",
-            "eventURL": "grpc://{IP-HOST-2}:11053",
+            "requestURL": "grpc://13.93.0.148:11051",
+            "eventURL": "grpc://13.93.0.148:11053",
             "hostnameOverride": "peer1.org2.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-2}:12051",
-            "eventURL": "grpc://{IP-HOST-2}:12053",
+            "requestURL": "grpc://13.93.0.148:12051",
+            "eventURL": "grpc://13.93.0.148:12053",
             "hostnameOverride": "peer2.org2.example.com"
         },  {
-            "requestURL": "grpc://{IP-HOST-3}:13051",
-            "eventURL": "grpc://{IP-HOST-3}:13053",
+            "requestURL": "grpc://13.94.231.130:13051",
+            "eventURL": "grpc://13.94.231.130:13053",
             "hostnameOverride": "peer0.org3.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-3}:14051",
-            "eventURL": "grpc://{IP-HOST-3}:14053",
+            "requestURL": "grpc://13.94.231.130:14051",
+            "eventURL": "grpc://13.94.231.130:14053",
             "hostnameOverride": "peer1.org3.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-3}:15051",
-            "eventURL": "grpc://{IP-HOST-3}:15053",
+            "requestURL": "grpc://13.94.231.130:15051",
+            "eventURL": "grpc://13.94.231.130:15053",
             "hostnameOverride": "peer2.org3.example.com"
         }
     ],
@@ -262,23 +262,23 @@ cat << EOF > org3onlyconnection.json
         }
     ],
     "ca": {
-        "url": "http://{IP-HOST-3}:7054",
+        "url": "http://13.94.231.130:7054",
         "name": "ca.org3.example.com",
         "hostnameOverride": "ca.org3.example.com"
     },
     "peers": [
         {
-            "requestURL": "grpc://{IP-HOST-3}:10051",
-            "eventURL": "grpc://{IP-HOST-3}:10053",
+            "requestURL": "grpc://13.94.231.130:10051",
+            "eventURL": "grpc://13.94.231.130:10053",
             "hostnameOverride": "peer0.org3.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-3}:11051",
-            "eventURL": "grpc://{IP-HOST-3}:11053",
+            "requestURL": "grpc://13.94.231.130:11051",
+            "eventURL": "grpc://13.94.231.130:11053",
             "hostnameOverride": "peer1.org3.example.com"
 
         }, {
-            "requestURL": "grpc://{IP-HOST-3}:12051",
-            "eventURL": "grpc://{IP-HOST-3}:12053",
+            "requestURL": "grpc://13.94.231.130:12051",
+            "eventURL": "grpc://13.94.231.130:12053",
             "hostnameOverride": "peer2.org3.example.com"
         }
     ],
@@ -299,7 +299,7 @@ cat << EOF > org3connection.json
         }
     ],
     "ca": {
-        "url": "http://{IP-HOST-3}:7054",
+        "url": "http://13.94.231.130:7054",
         "name": "ca.org3.example.com",
         "hostnameOverride": "ca.org3.example.com"
     },
@@ -314,28 +314,28 @@ cat << EOF > org3connection.json
             "requestURL": "grpc://localhost:9051",
             "hostnameOverride": "peer2.org1.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-2}:10051",
-            "eventURL": "grpc://{IP-HOST-2}:10053",
+            "requestURL": "grpc://13.93.0.148:10051",
+            "eventURL": "grpc://13.93.0.148:10053",
             "hostnameOverride": "peer0.org2.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-2}:11051",
-            "eventURL": "grpc://{IP-HOST-2}:11053",
+            "requestURL": "grpc://13.93.0.148:11051",
+            "eventURL": "grpc://13.93.0.148:11053",
             "hostnameOverride": "peer1.org2.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-2}:12051",
-            "eventURL": "grpc://{IP-HOST-2}:12053",
+            "requestURL": "grpc://13.93.0.148:12051",
+            "eventURL": "grpc://13.93.0.148:12053",
             "hostnameOverride": "peer2.org2.example.com"
         },  {
-            "requestURL": "grpc://{IP-HOST-3}:13051",
-            "eventURL": "grpc://{IP-HOST-3}:13053",
+            "requestURL": "grpc://13.94.231.130:13051",
+            "eventURL": "grpc://13.94.231.130:13053",
             "hostnameOverride": "peer0.org3.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-3}:14051",
-            "eventURL": "grpc://{IP-HOST-3}:14053",
+            "requestURL": "grpc://13.94.231.130:14051",
+            "eventURL": "grpc://13.94.231.130:14053",
             "hostnameOverride": "peer1.org3.example.com"
         }, {
-            "requestURL": "grpc://{IP-HOST-3}:15051",
-            "eventURL": "grpc://{IP-HOST-3}:15053",
+            "requestURL": "grpc://13.94.231.130:15051",
+            "eventURL": "grpc://13.94.231.130:15053",
             "hostnameOverride": "peer2.org3.example.com"
         }
     ],
