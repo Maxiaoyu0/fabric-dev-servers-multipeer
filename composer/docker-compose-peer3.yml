@@ -31,7 +31,7 @@ services:
       - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
       - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb3:5984
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
-    command: peer node start --peer-defaultchain=false
+    command: peer node start --peer-chaincodedev=true
     ports:
       - 13051:7051
       - 13053:7053
@@ -66,7 +66,7 @@ services:
       - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
       - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb4:5984
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
-    command: peer node start --peer-defaultchain=false
+    command: peer node start --peer-chaincodedev=true
     ports:
       - 14051:7051
       - 14053:7053
@@ -101,7 +101,7 @@ services:
       - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
       - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb5:5984
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
-    command: peer node start --peer-defaultchain=false
+    command: peer node start --peer-chaincodedev=true
     ports:
       - 15051:7051
       - 15053:7053
