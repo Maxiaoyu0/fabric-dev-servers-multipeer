@@ -28,7 +28,7 @@ fi
 
 cat << EOF > org1onlyconnection.json
 {
-    "name": "hlfv1",
+    "name": "hlfv1-byfn-network-org1only",
     "x-type": "hlfv1",
     "x-commitTimeout": 300,
     "version": "1.0.0",
@@ -81,8 +81,8 @@ cat << EOF > org1onlyconnection.json
             "eventUrl": "grpc://localhost:8053"
         },
         "peer2.org1.example.com": {
-            "url": "grpc://192.168.1.9:9051",
-            "eventUrl": "grpc://192.168.1.9:9053"
+            "url": "grpc://localhost:9051",
+            "eventUrl": "grpc://localhost:9053"
         }
     },
     "certificateAuthorities": {
@@ -96,55 +96,94 @@ EOF
 
 cat << EOF > org1connection.json
 {
-    "name": "byfn-network-org1",
+    "name": "hlfv1-byfn-network-org1",
     "x-type": "hlfv1",
-    "orderers": [
-        {
-            "url" : "grpc://localhost:7050",
-            "hostnameOverride" : "orderer.example.com"
+    "x-commitTimeout": 300,
+    "version": "1.0.0",
+    "client": {
+        "organization": "Org1",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300",
+                    "eventHub": "300",
+                    "eventReg": "300"
+                },
+                "orderer": "300"
+            }
         }
-    ],
-    "ca": {
-        "url": "http://localhost:7054",
-        "name": "ca.org1.example.com",
-        "hostnameOverride": "ca.org1.example.com"
     },
-    "peers": [
-        {
-            "requestURL": "grpc://localhost:7051",
-            "eventURL": "grpc://localhost:7053",
-            "hostnameOverride": "peer0.org1.example.com"
-        }, {
-            "requestURL": "grpc://localhost:8051",
-            "eventURL": "grpc://localhost:8053",
-            "hostnameOverride": "peer1.org1.example.com"
-        }, {
-            "requestURL": "grpc://localhost:9051",
-            "eventURL": "grpc://localhost:9053",
-            "hostnameOverride": "peer2.org1.example.com"
-        }, {
-            "requestURL": "grpc://13.93.0.148:10051",
-            "hostnameOverride": "peer0.org2.example.com"
-        }, {
-            "requestURL": "grpc://13.93.0.148:11051",
-            "hostnameOverride": "peer1.org2.example.com"
-        }, {
-            "requestURL": "grpc://13.93.0.148:12051",
-            "hostnameOverride": "peer2.org2.example.com"
-        }, {
-            "requestURL": "grpc://13.94.231.130:13051",
-            "hostnameOverride": "peer0.org3.example.com"
-        }, {
-            "requestURL": "grpc://13.94.231.130:14051",
-            "hostnameOverride": "peer1.org3.example.com"
-        }, {
-            "requestURL": "grpc://13.94.231.130:15051",
-            "hostnameOverride": "peer2.org3.example.com"
+    "channels": {
+        "composerchannel": {
+            "orderers": [
+                "orderer.example.com:7050"
+            ],
+            "peers": {
+                "peer0.org1.example.com": {}
+            }
         }
-    ],
-    "channel": "composerchannel",
-    "mspID": "Org1MSP",
-    "timeout": 300
+    },
+    "organizations": {
+        "Org1": {
+            "mspid": "Org1MSP",
+            "peers": [
+                "peer0.org1.example.com"
+            ],
+            "certificateAuthorities": [
+                "ca.org1.example.com"
+            ]
+        }
+    },
+    "orderers": {
+        "orderer.example.com": {
+            "url": "grpc://orderer.example.com:7050"
+        }
+    },
+    "peers": {
+        "peer0.org1.example.com": {
+            "url": "grpc://localhost:7051",
+            "eventUrl": "grpc://localhost:7053"
+        },
+        "peer1.org1.example.com": {
+            "url": "grpc://localhost:8051",
+            "eventUrl": "grpc://localhost:8053"
+        },
+        "peer2.org1.example.com": {
+            "url": "grpc://localhost:9051",
+            "eventUrl": "grpc://localhost:9053"
+        },
+        "peer0.org2.example.com": {
+            "url": "grpc://13.93.0.148:10051",
+            "eventUrl": "grpc://13.93.0.148:10053"
+        },
+        "peer1.org2.example.com": {
+            "url": "grpc://13.93.0.148:11051",
+            "eventUrl": "grpc://13.93.0.148:11053"
+        },
+        "peer2.org2.example.com": {
+            "url": "grpc://13.93.0.148:12051",
+            "eventUrl": "grpc://13.93.0.148:12053"
+        },
+        "peer0.org1.example.com": {
+            "url": "grpc://13.94.231.130:13051",
+            "eventUrl": "grpc://13.94.231.130:13053"
+        },
+        "peer1.org1.example.com": {
+            "url": "grpc://13.94.231.130:14051",
+            "eventUrl": "grpc://13.94.231.130:14053"
+        },
+        "peer2.org1.example.com": {
+            "url": "grpc://13.94.231.130:15051",
+            "eventUrl": "grpc://13.94.231.130:15053"
+        }
+
+    },
+    "certificateAuthorities": {
+        "ca.org1.example.com": {
+            "url": "http://localhost:7054",
+            "caName": "ca.org1.example.com"
+        }
+    }
 }
 EOF
 
@@ -169,95 +208,162 @@ rm -rf org1onlyconnection.json
 
 cat << EOF > org2onlyconnection.json
 {
-    "name": "byfn-network-org2-only",
+    "name": "hlfv1-byfn-network-org2only",
     "x-type": "hlfv1",
-    "orderers": [
-        {
-            "url" : "grpc://localhost:7050",
-            "hostnameOverride": "orderer.example.com"
+    "x-commitTimeout": 300,
+    "version": "1.0.0",
+    "client": {
+        "organization": "Org2",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300",
+                    "eventHub": "300",
+                    "eventReg": "300"
+                },
+                "orderer": "300"
+            }
         }
-    ],
-    "ca": {
-        "url": "http://13.93.0.148:7054",
-        "name": "ca.org2.example.com",
-        "hostnameOverride": "ca.org2.example.com"
     },
-    "peers": [
-        {
-            "requestURL": "grpc://13.93.0.148:10051",
-            "eventURL": "grpc://13.93.0.148:10053",
-            "hostnameOverride": "peer0.org2.example.com"
-        }, {
-            "requestURL": "grpc://13.93.0.148:11051",
-            "eventURL": "grpc://13.93.0.148:11053",
-            "hostnameOverride": "peer1.org2.example.com"
-
-        }, {
-            "requestURL": "grpc://13.93.0.148:12051",
-            "eventURL": "grpc://13.93.0.148:12053",
-            "hostnameOverride": "peer2.org2.example.com"
+    "channels": {
+        "composerchannel": {
+            "orderers": [
+                "orderer.example.com:7050"
+            ],
+            "peers": {
+                "peer0.org2.example.com": {}
+            }
         }
-    ],
-    "channel": "composerchannel",
-    "mspID": "Org2MSP",
-    "timeout": 300
+    },
+    "organizations": {
+        "Org2": {
+            "mspid": "Org2MSP",
+            "peers": [
+                "peer0.org2.example.com"
+            ],
+            "certificateAuthorities": [
+                "ca.org2.example.com"
+            ]
+        }
+    },
+    "orderers": {
+        "orderer.example.com": {
+            "url": "grpc://orderer.example.com:7050"
+        }
+    },
+    "peers": {
+        "peer0.org2.example.com": {
+            "url": "grpc://13.93.0.148:10051",
+            "eventUrl": "grpc://13.93.0.148:10053"
+        },
+        "peer1.org2.example.com": {
+            "url": "grpc://13.93.0.148:11051",
+            "eventUrl": "grpc://13.93.0.148:11053"
+        },
+        "peer2.org2.example.com": {
+            "url": "grpc://13.93.0.148:12051",
+            "eventUrl": "grpc://13.93.0.148:12053"
+        }
+    },
+    "certificateAuthorities": {
+        "ca.org2.example.com": {
+            "url": "http://13.93.0.148:7054",
+            "caName": "ca.org2.example.com"
+        }
+    }
 }
 EOF
 
 cat << EOF > org2connection.json
 {
-    "name": "byfn-network-org2",
+    "name": "hlfv1-byfn-network-org2",
     "x-type": "hlfv1",
-    "orderers": [
-        {
-            "url" : "grpc://localhost:7050",
-            "hostnameOverride": "orderer.example.com"
+    "x-commitTimeout": 300,
+    "version": "1.0.0",
+    "client": {
+        "organization": "Org2",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300",
+                    "eventHub": "300",
+                    "eventReg": "300"
+                },
+                "orderer": "300"
+            }
         }
-    ],
-    "ca": {
-        "url": "http://13.93.0.148:7054",
-        "name": "ca.org2.example.com",
-        "hostnameOverride": "ca.org2.example.com"
     },
-    "peers": [
-        {
-            "requestURL": "grpc://localhost:7051",
-            "hostnameOverride": "peer0.org1.example.com"
-        }, {
-            "requestURL": "grpc://localhost:8051",
-            "hostnameOverride": "peer1.org1.example.com"
-        }, {
-            "requestURL": "grpc://localhost:9051",
-            "hostnameOverride": "peer2.org1.example.com"
-        }, {
-            "requestURL": "grpc://13.93.0.148:10051",
-            "eventURL": "grpc://13.93.0.148:10053",
-            "hostnameOverride": "peer0.org2.example.com"
-        }, {
-            "requestURL": "grpc://13.93.0.148:11051",
-            "eventURL": "grpc://13.93.0.148:11053",
-            "hostnameOverride": "peer1.org2.example.com"
-        }, {
-            "requestURL": "grpc://13.93.0.148:12051",
-            "eventURL": "grpc://13.93.0.148:12053",
-            "hostnameOverride": "peer2.org2.example.com"
-        },  {
-            "requestURL": "grpc://13.94.231.130:13051",
-            "eventURL": "grpc://13.94.231.130:13053",
-            "hostnameOverride": "peer0.org3.example.com"
-        }, {
-            "requestURL": "grpc://13.94.231.130:14051",
-            "eventURL": "grpc://13.94.231.130:14053",
-            "hostnameOverride": "peer1.org3.example.com"
-        }, {
-            "requestURL": "grpc://13.94.231.130:15051",
-            "eventURL": "grpc://13.94.231.130:15053",
-            "hostnameOverride": "peer2.org3.example.com"
+    "channels": {
+        "composerchannel": {
+            "orderers": [
+                "orderer.example.com:7050"
+            ],
+            "peers": {
+                "peer0.org2.example.com": {}
+            }
         }
-    ],
-    "channel": "composerchannel",
-    "mspID": "Org2MSP",
-    "timeout": 300
+    },
+    "organizations": {
+        "Org1": {
+            "mspid": "Org1MSP",
+            "peers": [
+                "peer0.org2.example.com"
+            ],
+            "certificateAuthorities": [
+                "ca.org2.example.com"
+            ]
+        }
+    },
+    "orderers": {
+        "orderer.example.com": {
+            "url": "grpc://orderer.example.com:7050"
+        }
+    },
+    "peers": {
+        "peer0.org1.example.com": {
+            "url": "grpc://localhost:7051",
+            "eventUrl": "grpc://localhost:7053"
+        },
+        "peer1.org1.example.com": {
+            "url": "grpc://localhost:8051",
+            "eventUrl": "grpc://localhost:8053"
+        },
+        "peer2.org1.example.com": {
+            "url": "grpc://localhost:9051",
+            "eventUrl": "grpc://localhost:9053"
+        },
+        "peer0.org2.example.com": {
+            "url": "grpc://13.93.0.148:10051",
+            "eventUrl": "grpc://13.93.0.148:10053"
+        },
+        "peer1.org2.example.com": {
+            "url": "grpc://13.93.0.148:11051",
+            "eventUrl": "grpc://13.93.0.148:11053"
+        },
+        "peer2.org2.example.com": {
+            "url": "grpc://13.93.0.148:12051",
+            "eventUrl": "grpc://13.93.0.148:12053"
+        },
+        "peer0.org3.example.com": {
+            "url": "grpc://13.94.231.130:13051",
+            "eventUrl": "grpc://13.94.231.130:13053"
+        },
+        "peer1.org3.example.com": {
+            "url": "grpc://13.94.231.130:14051",
+            "eventUrl": "grpc://13.94.231.130:14053"
+        },
+        "peer2.org3.example.com": {
+            "url": "grpc://13.94.231.130:15051",
+            "eventUrl": "grpc://13.94.231.130:15053"
+        }
+
+    },
+    "certificateAuthorities": {
+        "ca.org2.example.com": {
+            "url": "http://13.93.0.148:7054",
+            "caName": "ca.org2.example.com"
+        }
+    }
 }
 EOF
 
@@ -285,95 +391,161 @@ rm -rf org2onlyconnection.json
 
 cat << EOF > org3onlyconnection.json
 {
-    "name": "byfn-network-org3-only",
+    "name": "hlfv1-byfn-network-org3only",
     "x-type": "hlfv1",
-    "orderers": [
-        {
-            "url" : "grpc://localhost:7050",
-            "hostnameOverride": "orderer.example.com"
+    "x-commitTimeout": 300,
+    "version": "1.0.0",
+    "client": {
+        "organization": "Org3",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300",
+                    "eventHub": "300",
+                    "eventReg": "300"
+                },
+                "orderer": "300"
+            }
         }
-    ],
-    "ca": {
-        "url": "http://13.94.231.130:7054",
-        "name": "ca.org3.example.com",
-        "hostnameOverride": "ca.org3.example.com"
     },
-    "peers": [
-        {
-            "requestURL": "grpc://13.94.231.130:10051",
-            "eventURL": "grpc://13.94.231.130:10053",
-            "hostnameOverride": "peer0.org3.example.com"
-        }, {
-            "requestURL": "grpc://13.94.231.130:11051",
-            "eventURL": "grpc://13.94.231.130:11053",
-            "hostnameOverride": "peer1.org3.example.com"
-
-        }, {
-            "requestURL": "grpc://13.94.231.130:12051",
-            "eventURL": "grpc://13.94.231.130:12053",
-            "hostnameOverride": "peer2.org3.example.com"
+    "channels": {
+        "composerchannel": {
+            "orderers": [
+                "orderer.example.com:7050"
+            ],
+            "peers": {
+                "peer0.org3.example.com": {}
+            }
         }
-    ],
-    "channel": "composerchannel",
-    "mspID": "org3MSP",
-    "timeout": 300
+    },
+    "organizations": {
+        "Org3": {
+            "mspid": "Org3MSP",
+            "peers": [
+                "peer0.org3.example.com"
+            ],
+            "certificateAuthorities": [
+                "ca.org3.example.com"
+            ]
+        }
+    },
+    "orderers": {
+        "orderer.example.com": {
+            "url": "grpc://orderer.example.com:7050"
+        }
+    },
+    "peers": {
+        "peer0.org3.example.com": {
+            "url": "grpc://13.94.231.130:13051",
+            "eventUrl": "grpc://13.94.231.130:13053"
+        },
+        "peer1.org3.example.com": {
+            "url": "grpc://13.94.231.130:14051",
+            "eventUrl": "grpc://13.94.231.130:14053"
+        },
+        "peer2.org3.example.com": {
+            "url": "grpc://13.94.231.130:15051",
+            "eventUrl": "grpc://13.94.231.130:15053"
+        }
+    },
+    "certificateAuthorities": {
+        "ca.org3.example.com": {
+            "url": "http://13.94.231.130:7054",
+            "caName": "ca.org3.example.com"
+        }
+    }
 }
 EOF
 
 cat << EOF > org3connection.json
 {
-    "name": "byfn-network-org3",
+    "name": "hlfv1-byfn-network-org3",
     "x-type": "hlfv1",
-    "orderers": [
-        {
-            "url" : "grpc://localhost:7050",
-            "hostnameOverride": "orderer.example.com"
+    "x-commitTimeout": 300,
+    "version": "1.0.0",
+    "client": {
+        "organization": "Org3",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300",
+                    "eventHub": "300",
+                    "eventReg": "300"
+                },
+                "orderer": "300"
+            }
         }
-    ],
-    "ca": {
-        "url": "http://13.94.231.130:7054",
-        "name": "ca.org3.example.com",
-        "hostnameOverride": "ca.org3.example.com"
     },
-    "peers": [
-        {
-            "requestURL": "grpc://localhost:7051",
-            "hostnameOverride": "peer0.org1.example.com"
-        }, {
-            "requestURL": "grpc://localhost:8051",
-            "hostnameOverride": "peer1.org1.example.com"
-        }, {
-            "requestURL": "grpc://localhost:9051",
-            "hostnameOverride": "peer2.org1.example.com"
-        }, {
-            "requestURL": "grpc://13.93.0.148:10051",
-            "eventURL": "grpc://13.93.0.148:10053",
-            "hostnameOverride": "peer0.org2.example.com"
-        }, {
-            "requestURL": "grpc://13.93.0.148:11051",
-            "eventURL": "grpc://13.93.0.148:11053",
-            "hostnameOverride": "peer1.org2.example.com"
-        }, {
-            "requestURL": "grpc://13.93.0.148:12051",
-            "eventURL": "grpc://13.93.0.148:12053",
-            "hostnameOverride": "peer2.org2.example.com"
-        },  {
-            "requestURL": "grpc://13.94.231.130:13051",
-            "eventURL": "grpc://13.94.231.130:13053",
-            "hostnameOverride": "peer0.org3.example.com"
-        }, {
-            "requestURL": "grpc://13.94.231.130:14051",
-            "eventURL": "grpc://13.94.231.130:14053",
-            "hostnameOverride": "peer1.org3.example.com"
-        }, {
-            "requestURL": "grpc://13.94.231.130:15051",
-            "eventURL": "grpc://13.94.231.130:15053",
-            "hostnameOverride": "peer2.org3.example.com"
+    "channels": {
+        "composerchannel": {
+            "orderers": [
+                "orderer.example.com:7050"
+            ],
+            "peers": {
+                "peer0.org3.example.com": {}
+            }
         }
-    ],
-    "channel": "composerchannel",
-    "mspID": "Org3MSP",
-    "timeout": 300
+    },
+    "organizations": {
+        "Org3": {
+            "mspid": "Org3MSP",
+            "peers": [
+                "peer0.org3.example.com"
+            ],
+            "certificateAuthorities": [
+                "ca.org3.example.com"
+            ]
+        }
+    },
+    "orderers": {
+        "orderer.example.com": {
+            "url": "grpc://orderer.example.com:7050"
+        }
+    },
+    "peers": {
+        "peer0.org1.example.com": {
+            "url": "grpc://localhost:7051",
+            "eventUrl": "grpc://localhost:7053"
+        },
+        "peer1.org1.example.com": {
+            "url": "grpc://localhost:8051",
+            "eventUrl": "grpc://localhost:8053"
+        },
+        "peer2.org1.example.com": {
+            "url": "grpc://localhost:9051",
+            "eventUrl": "grpc://localhost:9053"
+        },
+        "peer0.org2.example.com": {
+            "url": "grpc://13.93.0.148:10051",
+            "eventUrl": "grpc://13.93.0.148:10053"
+        },
+        "peer1.org2.example.com": {
+            "url": "grpc://13.93.0.148:11051",
+            "eventUrl": "grpc://13.93.0.148:11053"
+        },
+        "peer2.org2.example.com": {
+            "url": "grpc://13.93.0.148:12051",
+            "eventUrl": "grpc://13.93.0.148:12053"
+        },
+        "peer0.org3.example.com": {
+            "url": "grpc://13.94.231.130:13051",
+            "eventUrl": "grpc://13.94.231.130:13053"
+        },
+        "peer1.org3.example.com": {
+            "url": "grpc://13.94.231.130:14051",
+            "eventUrl": "grpc://13.94.231.130:14053"
+        },
+        "peer2.org3.example.com": {
+            "url": "grpc://13.94.231.130:15051",
+            "eventUrl": "grpc://13.94.231.130:15053"
+        }
+
+    },
+    "certificateAuthorities": {
+        "ca.org3.example.com": {
+            "caName": "ca.org3.example.com"
+        }
+    }
 }
 EOF
 
