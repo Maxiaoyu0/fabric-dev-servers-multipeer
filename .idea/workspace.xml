@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="176dd903-ca4a-4210-99b4-800c36f1b990" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/composer/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/createPeerAdminCard.sh" beforeDir="false" afterPath="$PROJECT_DIR$/createPeerAdminCard.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/composer/configtx.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="283">
-              <caret line="135" column="21" lean-forward="true" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
+              <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -42,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer3.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1605">
-              <caret line="107" column="12" lean-forward="true" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
+              <caret line="107" column="12" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -86,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createPeerAdminCard.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
+            <state relative-caret-position="2231">
               <caret line="580" column="20" selection-start-line="580" selection-end-line="581" />
             </state>
           </provider>
@@ -159,6 +157,36 @@
               <item name="fabric-dev-servers-multipeer" type="462c0819:PsiDirectoryNode" />
               <item name="composer" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="fabric-dev-servers-multipeer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-dev-servers-multipeer" type="462c0819:PsiDirectoryNode" />
+              <item name="composer" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto-config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabric-dev-servers-multipeer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-dev-servers-multipeer" type="462c0819:PsiDirectoryNode" />
+              <item name="composer" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto-config" type="462c0819:PsiDirectoryNode" />
+              <item name="peerOrganizations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabric-dev-servers-multipeer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-dev-servers-multipeer" type="462c0819:PsiDirectoryNode" />
+              <item name="composer" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto-config" type="462c0819:PsiDirectoryNode" />
+              <item name="peerOrganizations" type="462c0819:PsiDirectoryNode" />
+              <item name="org1.example.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabric-dev-servers-multipeer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-dev-servers-multipeer" type="462c0819:PsiDirectoryNode" />
+              <item name="composer" type="462c0819:PsiDirectoryNode" />
+              <item name="crypto-config" type="462c0819:PsiDirectoryNode" />
+              <item name="peerOrganizations" type="462c0819:PsiDirectoryNode" />
+              <item name="org1.example.com" type="462c0819:PsiDirectoryNode" />
+              <item name="ca" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -168,7 +196,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563282985858" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563283269493" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -201,15 +229,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1563175754523</updated>
-      <workItem from="1563175756073" duration="21973000" />
+      <workItem from="1563175756073" duration="22239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21973000" />
+    <option name="totallyTimeSpent" value="22239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -300,7 +329,7 @@
     <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer3.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1605">
-          <caret line="107" column="12" lean-forward="true" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
+          <caret line="107" column="12" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -314,7 +343,7 @@
     <entry file="file://$PROJECT_DIR$/composer/configtx.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
-          <caret line="135" column="21" lean-forward="true" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
+          <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -327,7 +356,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/createPeerAdminCard.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
+        <state relative-caret-position="2231">
           <caret line="580" column="20" selection-start-line="580" selection-end-line="581" />
         </state>
       </provider>
