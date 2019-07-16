@@ -543,6 +543,7 @@ cat << EOF > org3connection.json
     },
     "certificateAuthorities": {
         "ca.org3.example.com": {
+            "url": "http://13.94.231.130:7054",
             "caName": "ca.org3.example.com"
         }
     }
