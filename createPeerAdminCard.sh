@@ -164,15 +164,15 @@ cat << EOF > org1connection.json
             "url": "grpc://13.93.0.148:12051",
             "eventUrl": "grpc://13.93.0.148:12053"
         },
-        "peer0.org1.example.com": {
+        "peer0.org3.example.com": {
             "url": "grpc://13.94.231.130:13051",
             "eventUrl": "grpc://13.94.231.130:13053"
         },
-        "peer1.org1.example.com": {
+        "peer1.org3.example.com": {
             "url": "grpc://13.94.231.130:14051",
             "eventUrl": "grpc://13.94.231.130:14053"
         },
-        "peer2.org1.example.com": {
+        "peer2.org3.example.com": {
             "url": "grpc://13.94.231.130:15051",
             "eventUrl": "grpc://13.94.231.130:15053"
         }
