@@ -578,10 +578,10 @@ composer network install --archiveFile trade-network.bna --card PeerAdmin@hlfv1-
 composer network install --archiveFile trade-network.bna --card PeerAdmin@hlfv1-byfn-network-org2only
 composer network install --archiveFile trade-network.bna --card PeerAdmin@hlfv1-byfn-network-org3only
 
-composer identity request -c PeerAdmin@byfn-network-org1-only -u admin -s adminpw -d alice
-composer identity request -c PeerAdmin@byfn-network-org2-only -u admin -s adminpw -d bob
-composer identity request -c PeerAdmin@byfn-network-org3-only -u admin -s adminpw -d ma
-composer network start -c PeerAdmin@byfn-network-org1 -a trade-network.bna -o endorsementPolicyFile=endorsement-policy.json -A alice -C alice/admin-pub.pem -A bob -C bob/admin-pub.pem -A ma -C ma/admin-pub.pem
+composer identity request -c PeerAdmin@hlfv1-byfn-network-org1only -u admin -s adminpw -d alice
+composer identity request -c PeerAdmin@hlfv1-byfn-network-org2only -u admin -s adminpw -d bob
+composer identity request -c PeerAdmin@hlfv1-byfn-network-org3only -u admin -s adminpw -d ma
+composer network start -c PeerAdmin@hlfv1-byfn-network-org1 -a trade-network.bna -o endorsementPolicyFile=endorsement-policy.json -A alice -C alice/admin-pub.pem -A bob -C bob/admin-pub.pem -A ma -C ma/admin-pub.pem
 composer card create -p org1connection.json -u alice -n trade-network -c alice/admin-pub.pem -k alice/admin-priv.pem
 composer card import -f alice@trade-network.card
 composer card create -p org2connection.json -u bob -n trade-network -c bob/admin-pub.pem -k bob/admin-priv.pem
