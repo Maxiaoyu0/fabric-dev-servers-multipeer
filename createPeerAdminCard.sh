@@ -304,8 +304,8 @@ cat << EOF > org2connection.json
         }
     },
     "organizations": {
-        "Org1": {
-            "mspid": "Org1MSP",
+        "Org2": {
+            "mspid": "Org2MSP",
             "peers": [
                 "peer0.org2.example.com"
             ],
