@@ -574,9 +574,9 @@ rm -rf org3onlyconnection.json
 echo "Hyperledger Composer PeerAdmin card has been imported"
 composer card list
 
-composer network install --archiveFile trade-network.bna --card PeerAdmin@byfn-network-org1only
-composer network install --archiveFile trade-network.bna --card PeerAdmin@byfn-network-org2only
-composer network install --archiveFile trade-network.bna --card PeerAdmin@byfn-network-org3only
+composer network install --archiveFile trade-network.bna --card PeerAdmin@hlfv1-byfn-network-org1only
+composer network install --archiveFile trade-network.bna --card PeerAdmin@hlfv1-byfn-network-org2only
+composer network install --archiveFile trade-network.bna --card PeerAdmin@hlfv1-byfn-network-org3only
 
 composer identity request -c PeerAdmin@byfn-network-org1-only -u admin -s adminpw -d alice
 composer identity request -c PeerAdmin@byfn-network-org2-only -u admin -s adminpw -d bob
