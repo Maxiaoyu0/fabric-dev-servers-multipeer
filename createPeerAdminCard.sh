@@ -28,37 +28,69 @@ fi
 
 cat << EOF > org1onlyconnection.json
 {
-    "name": "byfn-network-org1-only",
+    "name": "hlfv1",
     "x-type": "hlfv1",
-    "orderers": [
-        {
-            "url" : "grpc://localhost:7050",
-            "hostnameOverride" : "orderer.example.com"
+    "x-commitTimeout": 300,
+    "version": "1.0.0",
+    "client": {
+        "organization": "Org1",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300",
+                    "eventHub": "300",
+                    "eventReg": "300"
+                },
+                "orderer": "300"
+            }
         }
-    ],
-    "ca": {
-        "url": "http://localhost:7054",
-        "name": "ca.org1.example.com",
-        "hostnameOverride": "ca.org1.example.com"
     },
-    "peers": [
-        {
-            "requestURL": "grpc://localhost:7051",
-            "eventURL": "grpc://localhost:7053",
-            "hostnameOverride": "peer0.org1.example.com"
-        }, {
-            "requestURL": "grpc://localhost:8051",
-            "eventURL": "grpc://localhost:8053",
-            "hostnameOverride": "peer1.org1.example.com"
-        }, {
-            "requestURL": "grpc://localhost:9051",
-            "eventURL": "grpc://localhost:9053",
-            "hostnameOverride": "peer2.org1.example.com"
+    "channels": {
+        "composerchannel": {
+            "orderers": [
+                "orderer.example.com:7050"
+            ],
+            "peers": {
+                "peer0.org1.example.com": {}
+            }
         }
-    ],
-    "channel": "composerchannel",
-    "mspID": "Org1MSP",
-    "timeout": 300
+    },
+    "organizations": {
+        "Org1": {
+            "mspid": "Org1MSP",
+            "peers": [
+                "peer0.org1.example.com"
+            ],
+            "certificateAuthorities": [
+                "ca.org1.example.com"
+            ]
+        }
+    },
+    "orderers": {
+        "orderer.example.com": {
+            "url": "grpc://orderer.example.com:7050"
+        }
+    },
+    "peers": {
+        "peer0.org1.example.com": {
+            "url": "grpc://localhost:7051",
+            "eventUrl": "grpc://localhost:7053"
+        },
+        "peer1.org1.example.com": {
+            "url": "grpc://localhost:8051",
+            "eventUrl": "grpc://localhost:8053"
+        },
+        "peer2.org1.example.com": {
+            "url": "grpc://192.168.1.9:9051",
+            "eventUrl": "grpc://192.168.1.9:9053"
+        }
+    },
+    "certificateAuthorities": {
+        "ca.org1.example.com": {
+            "url": "http://localhost:7054",
+            "caName": "ca.org1.example.com"
+        }
+    }
 }
 EOF
 
