@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="176dd903-ca4a-4210-99b4-800c36f1b990" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer/docker-compose-peer2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/composer/docker-compose-peer2.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer/docker-compose-peer3.yml" beforeDir="false" afterPath="$PROJECT_DIR$/composer/docker-compose-peer3.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/composer/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer/howtobuild.sh" beforeDir="false" afterPath="$PROJECT_DIR$/composer/howtobuild.sh" afterDir="false" />
-    </list>
+    <list default="true" id="176dd903-ca4a-4210-99b4-800c36f1b990" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +19,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer3.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -43,7 +37,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/startFabric-Peer2.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="735">
@@ -295,13 +289,6 @@
     <entry file="file://$PROJECT_DIR$/composer/composer-genesis.block">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/startFabric-Peer2.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/createPeerAdminCard.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2475">
@@ -355,6 +342,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startFabric-Peer2.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
