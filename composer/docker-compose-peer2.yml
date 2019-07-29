@@ -32,6 +32,8 @@ services:
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/peer/msp
       - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
       - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb3:5984
+      - CORE_PEER_TLS_ENABLED=false
+
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start --peer-chaincodedev=true
     ports:
@@ -67,6 +69,8 @@ services:
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/peer/msp
       - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
       - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb4:5984
+      - CORE_PEER_TLS_ENABLED=false
+
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start --peer-chaincodedev=true
     ports:
@@ -102,6 +106,8 @@ services:
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/peer/msp
       - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
       - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb5:5984
+      - CORE_PEER_TLS_ENABLED=false
+
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start --peer-chaincodedev=true
     ports:

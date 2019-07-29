@@ -27,6 +27,8 @@ services:
       - ORDERER_GENERAL_GENESISFILE=/etc/hyperledger/configtx/composer-genesis.block
       - ORDERER_GENERAL_LOCALMSPID=OrdererMSP
       - ORDERER_GENERAL_LOCALMSPDIR=/etc/hyperledger/msp/orderer/msp
+      - CORE_PEER_TLS_ENABLED=false
+
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: orderer
     ports:
@@ -49,6 +51,8 @@ services:
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/peer/msp
       - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
       - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb:5984
+      - CORE_PEER_TLS_ENABLED=false
+
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start --peer-chaincodedev=true
     ports:
@@ -86,6 +90,8 @@ services:
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/peer/msp
       - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
       - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb1:5984
+      - CORE_PEER_TLS_ENABLED=false
+
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start --peer-chaincodedev=true
     ports:
@@ -122,6 +128,8 @@ services:
       - CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/peer/msp
       - CORE_LEDGER_STATE_STATEDATABASE=CouchDB
       - CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS=couchdb2:5984
+      - CORE_PEER_TLS_ENABLED=false
+
     working_dir: /opt/gopath/src/github.com/hyperledger/fabric
     command: peer node start --peer-chaincodedev=true
     ports:
