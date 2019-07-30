@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="176dd903-ca4a-4210-99b4-800c36f1b990" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/composer/docker-compose-peer2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/composer/docker-compose-peer2.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer/docker-compose-peer3.yml" beforeDir="false" afterPath="$PROJECT_DIR$/composer/docker-compose-peer3.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/composer/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,17 +16,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer/configtx.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2025">
-              <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
+            <state relative-caret-position="1411">
+              <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer3.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="154" column="30" lean-forward="true" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+            <state relative-caret-position="161">
+              <caret line="142" column="54" selection-start-line="142" selection-start-column="54" selection-end-line="142" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -44,16 +44,16 @@
         <entry file="file://$PROJECT_DIR$/startFabric.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="42" column="93" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="93" />
+              <caret line="42" column="93" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="93" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="179" column="30" lean-forward="true" selection-start-line="153" selection-start-column="2" selection-end-line="179" selection-end-column="30" />
+            <state relative-caret-position="384">
+              <caret line="175" column="57" lean-forward="true" selection-start-line="175" selection-start-column="57" selection-end-line="175" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -61,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer2.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="142" column="51" selection-start-line="142" selection-start-column="51" selection-end-line="142" selection-end-column="51" />
+            <state relative-caret-position="150">
+              <caret line="15" column="257" selection-start-line="15" selection-start-column="252" selection-end-line="15" selection-end-column="257" />
             </state>
           </provider>
         </entry>
@@ -71,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/composer/docker-compose-cli.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="477">
-              <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+              <caret line="72" column="13" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -89,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/startFabric-Peer3.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="512">
-              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+              <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -120,6 +120,7 @@
       <find>peer0.sfeir.ticketChain.sfeir.lu</find>
       <find>peer1.sfeir.ticketChain.sfeir.lu</find>
       <find>peer0.ticketMaster.ticketChain.sfeir.lu</find>
+      <find>admin</find>
     </findStrings>
     <replaceStrings>
       <replace>peer3</replace>
@@ -155,9 +156,9 @@
         <option value="$PROJECT_DIR$/startFabric.sh" />
         <option value="$PROJECT_DIR$/startFabric-Peer2.sh" />
         <option value="$PROJECT_DIR$/startFabric-Peer3.sh" />
-        <option value="$PROJECT_DIR$/composer/docker-compose.yml" />
         <option value="$PROJECT_DIR$/composer/docker-compose-peer2.yml" />
         <option value="$PROJECT_DIR$/composer/docker-compose-peer3.yml" />
+        <option value="$PROJECT_DIR$/composer/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -183,36 +184,6 @@
               <item name="fabric-dev-servers-multipeer" type="b2602c69:ProjectViewProjectNode" />
               <item name="fabric-dev-servers-multipeer" type="462c0819:PsiDirectoryNode" />
               <item name="composer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fabric-dev-servers-multipeer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fabric-dev-servers-multipeer" type="462c0819:PsiDirectoryNode" />
-              <item name="composer" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto-config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fabric-dev-servers-multipeer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fabric-dev-servers-multipeer" type="462c0819:PsiDirectoryNode" />
-              <item name="composer" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto-config" type="462c0819:PsiDirectoryNode" />
-              <item name="peerOrganizations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fabric-dev-servers-multipeer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fabric-dev-servers-multipeer" type="462c0819:PsiDirectoryNode" />
-              <item name="composer" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto-config" type="462c0819:PsiDirectoryNode" />
-              <item name="peerOrganizations" type="462c0819:PsiDirectoryNode" />
-              <item name="org1.example.com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="fabric-dev-servers-multipeer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fabric-dev-servers-multipeer" type="462c0819:PsiDirectoryNode" />
-              <item name="composer" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto-config" type="462c0819:PsiDirectoryNode" />
-              <item name="peerOrganizations" type="462c0819:PsiDirectoryNode" />
-              <item name="org1.example.com" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -291,7 +262,7 @@
     <frame x="0" y="23" width="1440" height="825" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14020029" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19670959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -308,7 +279,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.13642564" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22783083" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -396,14 +367,14 @@
     <entry file="file://$PROJECT_DIR$/startFabric-Peer3.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/startFabric.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="42" column="93" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="93" />
+          <caret line="42" column="93" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="93" />
         </state>
       </provider>
     </entry>
@@ -414,38 +385,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer/configtx.yaml">
+    <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer3.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="179" column="30" lean-forward="true" selection-start-line="153" selection-start-column="2" selection-end-line="179" selection-end-column="30" />
+        <state relative-caret-position="161">
+          <caret line="142" column="54" selection-start-line="142" selection-start-column="54" selection-end-line="142" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer/docker-compose-cli.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
-          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+          <caret line="72" column="13" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer2.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="142" column="51" selection-start-line="142" selection-start-column="51" selection-end-line="142" selection-end-column="51" />
+        <state relative-caret-position="150">
+          <caret line="15" column="257" selection-start-line="15" selection-start-column="252" selection-end-line="15" selection-end-column="257" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer3.yml">
+    <entry file="file://$PROJECT_DIR$/composer/configtx.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="154" column="30" lean-forward="true" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+        <state relative-caret-position="1411">
+          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="175" column="57" lean-forward="true" selection-start-line="175" selection-start-column="57" selection-end-line="175" selection-end-column="57" />
         </state>
       </provider>
     </entry>
