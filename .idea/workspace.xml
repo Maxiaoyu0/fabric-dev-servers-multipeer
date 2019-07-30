@@ -4,7 +4,6 @@
     <list default="true" id="176dd903-ca4a-4210-99b4-800c36f1b990" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/composer/docker-compose-peer2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/composer/docker-compose-peer2.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer/docker-compose-peer3.yml" beforeDir="false" afterPath="$PROJECT_DIR$/composer/docker-compose-peer3.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/composer/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer/configtx.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1090">
+            <state relative-caret-position="2025">
               <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
             </state>
           </provider>
@@ -26,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer3.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1635">
-              <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+            <state relative-caret-position="408">
+              <caret line="154" column="30" lean-forward="true" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -44,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startFabric.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="48" selection-start-line="34" selection-end-line="48" />
+            <state relative-caret-position="308">
+              <caret line="42" column="93" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -53,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-239">
-              <caret line="130" column="6" lean-forward="true" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="6" />
+            <state relative-caret-position="496">
+              <caret line="179" column="30" lean-forward="true" selection-start-line="153" selection-start-column="2" selection-end-line="179" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -62,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer2.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="109" selection-start-line="109" selection-end-line="109" />
+            <state relative-caret-position="256">
+              <caret line="142" column="51" selection-start-line="142" selection-start-column="51" selection-end-line="142" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -71,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer/docker-compose-cli.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="71" column="30" lean-forward="true" selection-start-line="45" selection-start-column="2" selection-end-line="71" selection-end-column="30" />
+            <state relative-caret-position="477">
+              <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -156,8 +155,8 @@
         <option value="$PROJECT_DIR$/startFabric.sh" />
         <option value="$PROJECT_DIR$/startFabric-Peer2.sh" />
         <option value="$PROJECT_DIR$/startFabric-Peer3.sh" />
-        <option value="$PROJECT_DIR$/composer/docker-compose-peer2.yml" />
         <option value="$PROJECT_DIR$/composer/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/composer/docker-compose-peer2.yml" />
         <option value="$PROJECT_DIR$/composer/docker-compose-peer3.yml" />
       </list>
     </option>
@@ -387,13 +386,6 @@
     <entry file="file://$PROJECT_DIR$/stopFabric.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/startFabric.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="48" selection-start-line="34" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/startFabric-Peer2.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -408,6 +400,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/startFabric.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="42" column="93" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/composer/crypto-config.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -417,36 +416,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer/configtx.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1090">
+        <state relative-caret-position="2025">
           <caret line="135" column="21" selection-start-line="135" selection-start-column="21" selection-end-line="135" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer/docker-compose-cli.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="71" column="30" lean-forward="true" selection-start-line="45" selection-start-column="2" selection-end-line="71" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer2.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-239">
-          <caret line="130" column="6" lean-forward="true" selection-start-line="130" selection-start-column="6" selection-end-line="130" selection-end-column="6" />
+        <state relative-caret-position="496">
+          <caret line="179" column="30" lean-forward="true" selection-start-line="153" selection-start-column="2" selection-end-line="179" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer/docker-compose-cli.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="72" column="13" lean-forward="true" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer2.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="142" column="51" selection-start-line="142" selection-start-column="51" selection-end-line="142" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer/docker-compose-peer3.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
+        <state relative-caret-position="408">
+          <caret line="154" column="30" lean-forward="true" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
         </state>
       </provider>
     </entry>
