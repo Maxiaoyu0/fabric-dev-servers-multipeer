@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="176dd903-ca4a-4210-99b4-800c36f1b990" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/composer/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
+            <state relative-caret-position="2047">
+              <caret line="175" column="72" selection-start-line="175" selection-start-column="72" selection-end-line="175" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -161,10 +162,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="160" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="796" />
+    <option name="width" value="1440" />
     <option name="height" value="825" />
   </component>
   <component name="ProjectView">
@@ -179,6 +179,11 @@
             <path>
               <item name="fabric-dev-servers-multipeer" type="b2602c69:ProjectViewProjectNode" />
               <item name="fabric-dev-servers-multipeer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fabric-dev-servers-multipeer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fabric-dev-servers-multipeer" type="462c0819:PsiDirectoryNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -411,8 +416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="175" column="18" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
+        <state relative-caret-position="2047">
+          <caret line="175" column="72" selection-start-line="175" selection-start-column="72" selection-end-line="175" selection-end-column="72" />
         </state>
       </provider>
     </entry>
